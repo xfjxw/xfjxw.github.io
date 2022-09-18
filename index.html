@@ -153,34 +153,32 @@
 					</script>
 				</div>
 				<script>
-					window._bd_share_config = {
-						"common": {
-							"bdSnsKey": {},
-							"bdText": "",
-							"bdMini": "2",
-							"bdMiniList": false,
-							"bdPic": "",
-							"bdStyle": "0",
-							"bdSize": "16"
-						},
-						"slide": {
-							"type": "slide",
-							"bdImg": "2",
-							"bdPos": "right",
-							"bdTop": "250"
-						},
-						"image": {
-							"viewList": ["qzone", "tsina", "tqq", "renren", "weixin"],
-							"viewText": "分享到：",
-							"viewSize": "16"
-						},
-						"selectShare": {
-							"bdContainerClass": null,
-							"bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]
-						}
-					};
-					with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src =
-						'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+						 function click(e) {
+						 if (document.all) {
+						 if (event.button == 2 || event.button == 3) {
+						 alert("欢迎光临寒舍，有什么需要帮忙的话，请与站长联系！谢谢您的合作！！！");
+						          oncontextmenu = 'return false';
+						        }
+						      }
+						 if (document.layers) {
+						 if (e.which == 3) {
+						          oncontextmenu = 'return false';
+						        }
+						      }
+						    }
+						 if (document.layers) {
+						      document.captureEvents(Event.MOUSEDOWN);
+						    }
+						    document.onmousedown = click;
+						    document.oncontextmenu = new Function("return false;")
+						
+						    document.onkeydown = document.onkeyup = document.onkeypress = function () {
+						 if (window.event.keyCode == 123) {
+						        window.event.returnValue = false;
+						 return (false);
+						      }
+						    }
 				</script>
+				<script src="//topurl.cn/chat.js" async="async" fold></script>
 	</body>
 </html>

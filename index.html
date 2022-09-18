@@ -20,7 +20,7 @@
 
 				var testV = 1;
 
-				var pass1 = prompt('Sorry,该页只限熟人浏览,请输入密码:', '');
+				var pass1 = prompt('请输入密码', '');
 
 				while (testV < 3) {
 
@@ -28,11 +28,9 @@
 
 						history.go(-1);
 
-					if (pass1 == "1536930") { //初始密码123
+					if (pass1 == "123") { //初始密码123
 
-						alert('口令正确欢迎你❤');
-
-						window.location.href = "https://xfjxw.github.io/"; //修改需要密码认证的网页
+						alert('密码正确!');
 
 						break;
 
@@ -42,7 +40,7 @@
 
 					var pass1 =
 
-						prompt('朋友，密码不对哦！:(', '');
+						prompt('密码错误!请重新输入:');
 
 				}
 
@@ -55,6 +53,8 @@
 			}
 
 			document.write(password());
+
+
 			var stop, staticx;
 			var img = new Image();
 			img.src =

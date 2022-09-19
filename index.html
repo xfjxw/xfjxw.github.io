@@ -16,45 +16,6 @@
 		<script src="./js/jquery-1.7.1.min.js" type="text/javascript"></script>
 		<link href="./css/newcommons.css" rel="stylesheet" type="text/css">
 		<script>
-			function password() {
-
-				var testV = 1;
-
-				var pass1 = prompt('仅限群友可见：西风QQ前六位', '');
-
-				while (testV < 3) {
-
-					if (!pass1)
-
-						history.go(-1);
-
-					if (pass1 == "178576") { 
-
-						alert('密码正确!');
-
-						break;
-
-					}
-
-					testV += 1;
-
-					var pass1 =
-
-						prompt('密码错误!你不是内部人员吧！:');
-
-				}
-
-				if (pass1 != "password" & testV == 3)
-
-					history.go(-1);
-
-				return " ";
-
-			}
-
-			document.write(password());
-
-
 			var stop, staticx;
 			var img = new Image();
 			img.src =
